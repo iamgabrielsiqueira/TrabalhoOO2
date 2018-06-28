@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controler.ControllerTelaAdminJogos" alignment="CENTER" spacing="5">
+    <GridPane hgap="5" vgap="5" alignment="CENTER">
+        <HBox GridPane.rowIndex="0" GridPane.columnIndex="0" alignment="CENTER">
+            <Text text="Time" textAlignment="CENTER"/>
+        </HBox>
+        <HBox GridPane.rowIndex="0" GridPane.columnIndex="2" alignment="CENTER">
+            <Text text="Time" textAlignment="CENTER"/>
+        </HBox>
+        <TextField GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Text GridPane.rowIndex="1" GridPane.columnIndex="1" text="  X " textAlignment="CENTER"/>
+        <TextField GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+        <Button text="Salvar" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+
+    </GridPane>
+</VBox>

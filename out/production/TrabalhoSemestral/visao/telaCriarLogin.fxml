@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx" alignment="CENTER">
+    <GridPane alignment="CENTER" vgap="10" hgap="10">
+        <Text text="Nome: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Text text="User: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        <Text text="Senha: " GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        <HBox GridPane.rowIndex="3" GridPane.columnIndex="1" alignment="BOTTOM_RIGHT">
+            <Button text="Enviar"/>
+        </HBox>
+    </GridPane>
+</VBox>

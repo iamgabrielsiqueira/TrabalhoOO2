@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controler.ControllerTelaResultado"
+            prefHeight="150.0" prefWidth="500.0">
+    <content>
+        <BorderPane>
+            <top>
+                <VBox>
+                    <HBox alignment="TOP_RIGHT">
+                        <Text text="Torneio: "/>
+                        <Text fx:id="nomeTorneio" text="Erro ao ler torneio" />
+                    </HBox>
+                    <Separator/>
+                </VBox>
+            </top>
+            <center>
+                <VBox alignment="CENTER" spacing="20">
+                    <HBox>
+
+                    </HBox>
+                    <HBox spacing="10" alignment="CENTER">
+                        <Label text="Time 1" fx:id="lbTime1"/>
+                        <TextField maxWidth="50" fx:id="tfPonto1"/>
+                        <Label text="Time 2" fx:id="lbTime2"/>
+                        <TextField maxWidth="50" fx:id="tfPonto2"/>
+                    </HBox>
+                    <Button text="Salvar" onAction="#salvarResultado"/>
+                </VBox>
+            </center>
+        </BorderPane>
+
+    </content>
+</DialogPane>

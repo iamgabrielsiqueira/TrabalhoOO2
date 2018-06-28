@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<DialogPane fx:controller="controler.ControllerCriarLogin"
+            xmlns:fx="http://javafx.com/fxml" fx:id="criarLogin">
+    <content>
+        <VBox spacing="10">
+            <GridPane alignment="CENTER" vgap="10" hgap="10">
+                <Text text="Nome: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField GridPane.rowIndex="0" GridPane.columnIndex="1" fx:id="tfNome"/>
+                <Text text="User: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextField GridPane.rowIndex="1" GridPane.columnIndex="1" fx:id="tfUsername"/>
+                <Text text="Senha: " GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <PasswordField GridPane.rowIndex="2" GridPane.columnIndex="1" fx:id="tfSenha"/>
+                <HBox GridPane.rowIndex="3" GridPane.columnIndex="1" alignment="BOTTOM_RIGHT">
+                    <Button text="Enviar" onAction="#btEnviar"/>
+                </HBox>
+
+            </GridPane>
+            <Text fx:id="mensagem01" text="" GridPane.rowIndex="4"/>
+        </VBox>
+
+    </content>
+
+</DialogPane>

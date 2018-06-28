@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.collections.FXCollections?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controler.ControllerTelaAdmin" prefWidth="600" prefHeight="400" fx:id="telaAdmin">
+    <top>
+        <VBox spacing="3" alignment="TOP_CENTER">
+            <HBox spacing="5" alignment="TOP_RIGHT"><Text text="Nome:"/> <Text text="" fx:id="txNomeUser"/></HBox>
+            <HBox spacing="5" alignment="TOP_RIGHT"><Text text="Login:"/> <Text text="" fx:id="txLoginUser"/></HBox>
+            <HBox spacing="5" alignment="TOP_RIGHT"><Text text="Tipo:"/> <Text text="" fx:id="txTipoUser"/></HBox>
+        </VBox>
+    </top>
+    <left>
+        <VBox alignment="CENTER">
+            <HBox alignment="CENTER_LEFT">
+                <Text text="Torneios"/>
+            </HBox>
+            <ListView fx:id="ltvwTorneio"/>
+        </VBox>
+    </left>
+    <center>
+        <GridPane alignment="CENTER" vgap="10" hgap="10">
+            <Text text="Torneio de:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+            <TextField text="Futebol" GridPane.rowIndex="1" GridPane.columnIndex="0" fx:id="txTipo"/>
+            <Text text="Nome:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField GridPane.rowIndex="3" GridPane.columnIndex="0" fx:id="textNome"/>
+            <Button text="Salvar" GridPane.rowIndex="4" GridPane.columnIndex="0" onAction="#salvarTorneio"/>
+        </GridPane>
+    </center>
+</BorderPane>

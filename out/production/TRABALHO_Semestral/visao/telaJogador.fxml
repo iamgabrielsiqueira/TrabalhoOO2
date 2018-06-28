@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controler.ControllerTelaJogador"
+            prefHeight="400.0" prefWidth="600.0" fx:id="telaJogador">
+
+    <left>
+        <VBox spacing="10">
+            <Label text="Torneios" />
+            <padding>
+                <Insets top="25" right="25" bottom="25" left="25"/>
+            </padding>
+            <ListView fx:id="ltvwTarefas"/>
+            <HBox alignment="BOTTOM_RIGHT" spacing="10">
+                <Text fx:id="txQtdeTarefas" text="Opções:"/>
+                <Button fx:id="btAdd">
+                    <graphic>
+
+                    </graphic>
+                </Button>
+                <Button fx:id="btDel">
+                    <graphic>
+
+                    </graphic>
+                </Button>
+
+            </HBox>
+        </VBox>
+    </left>
+    <right>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="25" right="25" bottom="25" left="25"/>
+            </padding>
+            <Label text="Ranking por Torneio" />
+            <ListView fx:id="ltvwTarefas1"/>
+            <Label text="Ranking Geral:" />
+            <ListView fx:id="ltvwTarefas2"/>
+        </VBox>
+    </right>
+
+</BorderPane>

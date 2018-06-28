@@ -1,0 +1,23 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ButtonBar?>
+<VBox fx:controller="controler.ControllerTelaLogin"
+      xmlns:fx="http://javafx.com/fxml" alignment="center" spacing="10">
+    <GridPane alignment="CENTER" vgap="10" hgap="10">
+        <Text text="Login: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Text text="Senha: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    </GridPane>
+    <HBox alignment="CENTER" spacing="75">
+        <Button text="Criar Conta"/>
+        <Button text="Logar"/>
+    </HBox>
+</VBox>

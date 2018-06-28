@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controler.ControllerTelaAdminResultado" alignment="CENTER" spacing="5">
+    <HBox alignment="CENTER">
+        <Text text="Partida:"/>
+        //essas nao esta pronta ainda
+    </HBox>
+</VBox>
